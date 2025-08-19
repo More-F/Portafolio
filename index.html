@@ -4,203 +4,473 @@
 		<title>Andres Moreno</title>
 		<meta charset="utf-8" />
 		<meta name="Portafolio" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/general.css">
+		<link rel="stylesheet" href="/assets/css/navegacion.css">
+		<link rel="stylesheet" href="/assets/css/footer.css">
+		<link rel="stylesheet" href="/assets/css/proyectos.css">
+		<link rel="stylesheet" href="/assets/css/habilidades.css">
+		<link rel="stylesheet" href="/assets/css/bienvenida.css">
+		<link rel="stylesheet" href="/assets/css/contactame.css">
+		<link rel="stylesheet" href="/assets/css/lenguajes.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
-
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Bienvenida</a></li>
-							<li><a href="#one">Mis proyectos</a></li>
-							<li><a href="#two">Lenguajes</a></li>
-							<li><a href="#three">Contactame</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-
+		<!-- Barra de navegación -->
+		<!-- Navbar Superior -->
+		<nav id="navbar" class="neon-navbar">
+			<div class="nav-container">
+				<ul class="nav-menu">
+					<li>
+						<a href="#inicio" class="nav-link" data-tooltip="Inicio">
+							<i class="fas fa-home"></i>
+							<span class="nav-text">Inicio</span>
+						</a>
+					</li>
+					<li>
+						<a href="#habilidades" class="nav-link" data-tooltip="Habilidades">
+							<i class="fa-solid fa-mug-hot"></i>
+							<span class="nav-text">Habilidades</span>
+						</a>
+					</li>
+					<li>
+						<a href="#proyectos" class="nav-link" data-tooltip="Proyectos">
+							<i class="fas fa-briefcase"></i>
+							<span class="nav-text">Proyectos</span>
+						</a>
+					</li>
+					<li>
+						<a href="#lenguajes" class="nav-link" data-tooltip="Lenguajes">
+							<i class="fas fa-code"></i>
+							<span class="nav-text">Lenguajes</span>
+						</a>
+					</li>
+					<li>
+						<a href="#contactame" class="nav-link" data-tooltip="Contacto">
+							<i class="fas fa-phone"></i>
+							<span class="nav-text">Contacto</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Andres Moreno | Ingeniero de Software Backend</h1>
-							<p>Desarrollador Backend orientado a resultados, enfocado en crear sistemas sólidos, seguros y fáciles de mantener.
-							Trabajo con bases de datos, lógica del servidor y arquitectura limpia para que las aplicaciones funcionen sin fallos.
-							</p>
-							<p></p><a href="/archivos/Hoja de Vida - ATS.docx">Conoce mi trayecto.</a></p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Sigue leyendo</a></li>
-							</ul>
+					<section class="hero-section" id="inicio">
+						<div class="hero-content">
+							<div class="hero-text">
+								<div class="tagline">Hi, I am</div>
+								<h1>ANDRES MORENO</h1>
+								<div class="typewriter-wrapper">
+									<span class="typewriter-text">Backend Software Engineer</span>
+								</div>
+								<p class="hero-description">Results-oriented backend developer focused on creating robust, secure, and maintainable systems.</>
+								<div class="small row"></div>
+								
+								<div class="hero-buttons">
+									<a href="/archivos/Hoja de Vida - ATS.docx" class="btn-primary">
+										<i class="fas fa-user-tie"></i>KNOW MY JOURNEY
+									</a>
+									<a href="#projects" class="btn-secondary">
+										<i class="fas fa-code"></i>KEEP READING
+									</a>
+								</div>
+							</div>
+							
+							<div class="hero-image">
+								<div class="yo-img">
+									<img src="/images/Yo.jpg" alt="Andres Moreno">
+								</div>
+							</div>
+						</div>
+						
+						<div class="scroll-indicator">
+							<span>Scroll Down</span>
+							<div class="arrow"></div>
 						</div>
 					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+				<!-- habilidades -->
+					<section id="habilidades" class="neon-skills-section">
+						<h1 class="neon-skills-title">SKILLS</h1>
+						<div class="neon-cards-container">
+							<!-- Tarjeta 1 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/critico.png" alt="Pensamiento crítico" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Pensamiento crítico</h3>
+									<p class="neon-skill-desc">Analizo situaciones para tomar decisiones lógicas y acertadas</p>
 								</div>
 							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+							<!-- Tarjeta 2 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/comunicacionefectiva.png" alt="Comunicación efectiva" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Comunicación efectiva</h3>
+									<p class="neon-skill-desc">Expreso ideas de forma clara y escucha activamente a los demás.</p>
 								</div>
 							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+							<!-- Tarjeta 3 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/problema.png" alt="Resolución de problemas" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Resolución de problemas</h3>
+									<p class="neon-skill-desc">Encuentro soluciones eficientes a desafíos complejos</p>
 								</div>
 							</div>
-						</section>
+							<!-- Tarjeta 4 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/adaptar.png" alt="Adaptabilidad" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Adaptabilidad</h3>
+									<p class="neon-skill-desc">Me ajusto a nuevos entornos, tecnologías y cambios en los proyectos</p>
+								</div>
+							</div>
+							<!-- Tarjeta 5 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/equipo.png" alt="Trabajo en equipo" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Trabajo en equipo</h3>
+									<p class="neon-skill-desc">Colaboro con otros para lograr un objetivo común.</p>
+								</div>
+							</div>
+							<!-- Tarjeta 6 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/iniciativa.png" alt="Iniciativa" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Iniciativa</h3>
+									<p class="neon-skill-desc">Tomar la delantera y proponer soluciones sin esperar que te lo pidan.</p>
+								</div>
+							</div>
+							<!-- Tarjeta 1 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/organizado.png" alt="Organización" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Organización</h3>
+									<p class="neon-skill-desc">Gestionar tareas y tiempo de manera eficiente para cumplir plazos.</p>
+								</div>
+							</div>
+							<!-- Tarjeta 1 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="/images/habilidades/aprendizaje-continuo.png" alt="Aprendizaje continuo" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Aprendizaje continuo</h3>
+									<p class="neon-skill-desc">Mantenerse actualizado y adquirir nuevas habilidades constantemente.</p>
+								</div>
+							</div>
+							
+							
+							<!-- Repite para las demás tarjetas cambiando el contenido -->
+						</div>
+						
+						<!-- Efecto de partículas rojo vino -->
+						<div class="neon-particles" id="wine-particles"></div>
 					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+				<!-- proyectos -->
+					<section id="proyectos" class="neon-projects">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
+							<h2 class="neon-title">Mis <span class="neon-highlight">Proyectos</span></h2>
+							<div class="projects-grid">
+								<!-- Proyecto 1 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Api de pokemones</h3>
+									<img src="/images/Logo.png" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Plataforma web que permite a los usuarios buscar, observar y guardar sus pokemones favoritos.</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#Javascript</span>
+										<span class="neon-tag">#CSS3</span>
+										<span class="neon-tag">#HTML5</span>
+									</div>
+									<a href="https://github.com/" class="neon-button">
+										Ver Proyecto
+									</a>
+								</div>
+								<!-- Proyecto 2 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Api de campeones de Lol</h3>
+									<img src="/images/Logo.png" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Pagina que te muestra la informacion de campeones del juego League of legends</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#React</span>
+										<span class="neon-tag">#REST API</span>
+										<span class="neon-tag">#SCSS</span>
+									</div>
+									<a href="#" class="neon-button">
+										Ver Proyecto
+									</a>
+								</div>
+								<!-- Proyecto 3 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Api de Astronomia</h3>
+									<img src="/images/Logo.png" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Pagina web que te permite ver las constelaciones registradas por la nasa hasta el dia de hoy</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#NextJS</span>
+										<span class="neon-tag">#Supabase</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="#" class="neon-button">
+										Ver Proyecto
+									</a>
+								</div>
+								<!-- Proyecto 4 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Pagina de comercio vintage</h3>
+									<img src="/images/Logo.png" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Pagina web que da la informacion de venta y registro de prodcutos vintage</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#NextJS</span>
+										<span class="neon-tag">#Supabase</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="#" class="neon-button">
+										Ver Proyecto
+									</a>
+								</div>
+								<!-- Proyecto 5 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Proyecto E-commerce</h3>
+									<img src="/images/Logo.png" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Plataforma web de venta sobre productos tecnologicos</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#NextJS</span>
+										<span class="neon-tag">#Supabase</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="#" class="neon-button">
+										Ver Proyecto
+									</a>
+								</div>
+								<!-- Proyecto 6 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">ERP para negocio de comida</h3>
+									<img src="/images/Logo.png" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">ERP desarrollada en Java que registra ventas, clientes, vendedores, stock, distribuidores y guarda facturas personalizadas segun la compra</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#NextJS</span>
+										<span class="neon-tag">#Supabase</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="#" class="neon-button">
+										Ver Proyecto
+									</a>
+								</div>
+								
 							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+						</div>
+						<!-- Efecto de partículas neon -->
+						<div class="neon-particles" id="neon-particles"></div>
+					</section>
+				<!--lenguajes -->
+					<section id="lenguajes" class="tech-section">
+						<div class="inner">
+							<h2 class="tech-title">LENGUAJES & TECNOLOGÍAS</h2>
+							<div class="tech-grid">
+								<!-- Tecnología 1 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/html5.png" alt="HTML5" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 2 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/css3.png" alt="CSS3" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 3 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/javascript.png" alt="JavaScript" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 4 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/nodejs.png" alt="Node.js" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 5 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/java.png" alt="Java" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 6 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/docker.png" alt="Docker" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 7 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/mongodb.png" alt="MongoDB" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 8 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/mysql.png" alt="MySQL" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 9 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/git.png" alt="Git" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 10 -->
+								<div class="tech-circle">
+									<img src="/images/lenguajes/figma.png" alt="FIGMA" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+
+								<div class="tech-circle">
+									<img src="/images/lenguajes/python.png" alt="python" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+							</div>
 						</div>
 					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+				<!-- Contactame -->
+					<section id="contactame" class="neon-contact-section">
+						<div class="neon-overlay"></div>
 						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
+							<h2 class="neon-contact-title">Contáctame</h2>
+							<p class="neon-contact-subtitle">¿Tienes un proyecto en mente o quieres colaborar? Envíame un mensaje y hablemos sobre cómo puedo ayudarte.</p>
+							
+							<div class="neon-contact-grid">
+								<!-- Formulario Futurista Neon -->
+								<div class="neon-contact-form">
 									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+										<div class="neon-form-group">
+											<div class="neon-input-group">
+												<input type="text" name="name" id="name" required />
+												<label for="name">Nombre</label>
+												<div class="neon-underline"></div>
 											</div>
-											<div class="field half">
+											
+											<div class="neon-input-group">
+												<input type="email" name="email" id="email" required />
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<div class="neon-underline"></div>
 											</div>
 										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
+										
+										<div class="neon-input-group neon-textarea-group">
+											<textarea name="message" id="message" rows="5" required></textarea>
+											<label for="message">Mensaje</label>
+											<div class="neon-underline"></div>
+										</div>
+										
+										<button type="submit" class="neon-submit-btn">
+											<span>Enviar Mensaje</span>
+											<div class="neon-arrow-wrapper">
+												<div class="neon-arrow"></div>
+											</div>
+										</button>
 									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
+								</div>
+								
+								<!-- Info de Contacto Futurista -->
+								<div class="neon-contact-info">
+									<div class="neon-info-card">
+										<div class="neon-card-icon">
+											<i class="fas fa-map-marker-alt"></i>
+										</div>
+										<div class="neon-card-content">
+											<h3>Ubicación</h3>
+											<p>Bogotá, Colombia</p>
+										</div>
+									</div>
+									
+									<div class="neon-info-card">
+										<div class="neon-card-icon">
+											<i class="fas fa-envelope"></i>
+										</div>
+										<div class="neon-card-content">
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+											<a href="mailto:andresfel38.2@gmail.com" class="neon-email">andresfel38.2@gmail.com</a>
+										</div>
+									</div>
+									
+									<div class="neon-info-card">
+										<div class="neon-card-icon">
+											<i class="fas fa-phone-alt"></i>
+										</div>
+										<div class="neon-card-content">
+											<h3>Teléfono</h3>
+											<p class="neon-phone">+57 316 058 8841</p>
+										</div>
+									</div>
+									
+									<div class="neon-social-links">
+										<h3>Redes Sociales</h3>
+										<div class="neon-social-icons">
+											<a href="https://github.com/More-F" class="neon-social-icon" target="_blank">
+												<i class="fab fa-github"></i>
+											</a>
+											<a href="https://www.instagram.com/ares_moren/" class="neon-social-icon" target="_blank">
+												<i class="fab fa-instagram"></i>
+											</a>
+											<a href="https://www.linkedin.com/in/andres-moreno-30371b248/" class="neon-social-icon" target="_blank">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
+						<!-- Efecto de partículas neon verde -->
+						<div class="neon-particles" id="contact-particles"></div>
 					</section>
-
 			</div>
-
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<footer id="footer" class="neon-footer">
+			<div class="footer-overlay"></div>
+			<div class="inner">
+				<ul class="footer-menu">
+					<li class="footer-item">&copy; <span class="neon-text">More-F</span>. All rights reserved.</li>
+					<li class="footer-item">Design: <a href="https://github.com/More-F" class="neon-link">Andres Moreno</a></li>
+				</ul>
+				<div class="footer-particles" id="footer-particles"></div>
+			</div>
+		</footer>
+		<script src="/assets/js/habilidadesjs.js"></script>
+		<script type="module" src="/assets/js/bienvenida.js"></script>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="/assets/js/contactame.js"></script>
 	</body>
 </html>
