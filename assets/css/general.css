@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x:  -moz-scrollbars-none; /* Previene scroll horizontal */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+section.fullscreen {
+    min-height: calc(100vh - 70px); /* Resta la altura del navbar */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem 5%;
+}
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero-section,
+.neon-projects,
+.tech-section,
+.neon-contact-section {
+    min-height: 100vh;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#wrapper::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+
