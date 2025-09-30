@@ -1,0 +1,172 @@
+/* Estilos para la sección de tecnologías */
+.tech-section {
+    position: relative;
+    background: #0a0a15;
+    padding: 5rem 2rem;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.tech-title {
+    font-size: 2.5rem;
+    color: #7f00ff;
+    text-shadow: 0 0 10px #7f00ff;
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: pulse 2s infinite alternate;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.tech-circle {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 0, 60, 0.5);
+    border: 2px solid rgba(127, 0, 255, 0.3);
+    box-shadow: 
+        0 0 10px rgba(127, 0, 255, 0.2),
+        inset 0 0 10px rgba(127, 0, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(127, 0, 255, 0.5));
+    transition: all 0.3s ease;
+}
+
+.tech-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at center, rgba(127, 0, 255, 0.3) 0%, transparent 70%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.tech-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        0 0 20px rgba(127, 0, 255, 0.4),
+        inset 0 0 15px rgba(127, 0, 255, 0.2);
+    border-color: rgba(127, 0, 255, 0.6);
+}
+
+.tech-circle:hover .tech-glow {
+    opacity: 1;
+}
+
+.tech-circle:hover .tech-icon {
+    filter: drop-shadow(0 0 10px rgba(127, 0, 255, 0.8));
+}
+
+/* Animaciones */
+@keyframes pulse {
+    from {
+        text-shadow: 0 0 5px #7f00ff;
+    }
+    to {
+        text-shadow: 0 0 15px #7f00ff, 0 0 25px #7f00ff;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tech-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 2rem;
+    }
+    
+    .tech-circle {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .tech-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-section {
+        padding: 3rem 1rem;
+    }
+    
+    .tech-title {
+        font-size: 1.8rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .tech-circle {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .tech-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.tech-section {
+    padding: 5rem 2rem;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tech-section .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    padding: 5rem 2rem;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .tech-section, #proyectos {
+        padding: 3rem 1rem;
+    }
+}

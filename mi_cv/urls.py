@@ -16,9 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from faq.views import fyq_view 
+from open.views import open_list, open_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('portafolio.urls')),   # landing page en la raíz
     path('contacto/', include('contacto.urls')),
+    path('fyq/', fyq_view, name="fyq"), 
+    path("open/", open_list, name="open"),         
+    path("open/<int:pk>/", open_detail, name="open_detail"),
 ]

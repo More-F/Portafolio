@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="{% static 'portafolio/css/faq.css' %}">
+  <script src="{% static 'portafolio/js/faq.js' %}" defer></script>
+</head>
+<body>
+  <main class="faq-wrapper">
+    <section class="faq-container">
+      <h1 class="faq-title">Preguntas Frecuentes</h1>
+      <p class="faq-subtitle">Respuestas claras para las dudas más comunes.</p>
+
+      <div class="faq-list">
+        {% for item in faqs %}
+        <article class="faq-item" data-idx="{{ forloop.counter0 }}">
+          <button class="faq-question" aria-expanded="false" aria-controls="answer-{{ forloop.counter }}">
+            <span class="faq-q-text">{{ item.pregunta }}</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+
+          <div id="answer-{{ forloop.counter }}" class="faq-answer" hidden>
+            <div class="faq-answer-inner">
+              {{ item.respuesta|linebreaks }}
+            </div>
+          </div>
+        </article>
+        {% empty %}
+          <p>No hay preguntas frecuentes disponibles.</p>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+</body>
+</html>

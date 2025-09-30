@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ videojuego.titulo }}</title>
+    <link rel="stylesheet" href="{% static 'portafolio/css/open.css' %}">
+</head>
+<body>
+    <div class="detail-container">
+        <img src="{{ videojuego.imagen_url }}" alt="{{ videojuego.titulo }}">
+        <h1>{{ videojuego.titulo }}</h1>
+        <p><strong>Resumen:</strong> {{ videojuego.resumen }}</p>
+        <p><strong>Descripción:</strong> {{ videojuego.descripcion }}</p>
+        <p><strong>Palabras clave:</strong> {{ videojuego.palabras_clave }}</p>
+        <a href="{% url 'open' %}" class="btn-back">← Volver</a>
+    </div>
+</body>
+</html>

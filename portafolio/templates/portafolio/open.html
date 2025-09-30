@@ -1,21 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/footer.css">
+    <title>Videojuegos</title>
+    <link rel="stylesheet" href="{% static 'portafolio/css/open.css' %}">
 </head>
 <body>
-    <footer id="footer" class="neon-footer">
-			<div class="footer-overlay"></div>
-			<div class="inner">
-				<ul class="footer-menu">
-					<li class="footer-item">&copy; <span class="neon-text">More-F</span>. All rights reserved.</li>
-					<li class="footer-item">Design: <a href="https://github.com/More-F" class="neon-link">Andres Moreno</a></li>
-				</ul>
-				<div class="footer-particles" id="footer-particles"></div>
-			</div>
-	</footer>
+    <h1 class="page-title">Videojuegos</h1>
+
+    <div class="grid-container">
+        {% for juego in videojuegos %}
+            <div class="grid-item">
+                <img src="{{ juego.imagen_url }}" alt="{{ juego.titulo }}">
+                <h2>{{ juego.titulo }}</h2>
+                <p class="resumen">{{ juego.resumen }}</p>
+                <p class="keywords">Palabras clave: {{ juego.palabras_clave }}</p>
+                <a href="{% url 'open_detail' juego.pk %}" class="btn-ver">Ver detalle</a>
+            </div>
+        {% empty %}
+            <p>No hay videojuegos registrados.</p>
+        {% endfor %}
+    </div>
 </body>
 </html>
