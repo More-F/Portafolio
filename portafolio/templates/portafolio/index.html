@@ -1,0 +1,497 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Andres Moreno</title>
+		<meta charset="utf-8" />
+		<meta name="Portafolio" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{% static 'portafolio/css/general.css' %}">
+		<link rel="stylesheet" href="{% static 'portafolio/css/navegacion.css' %}">
+		<link rel="stylesheet" href="{% static 'portafolio/css/footer.css' %}">
+		<link rel="stylesheet" href="{% static 'portafolio/css/proyectos.css' %}">
+		<link rel="stylesheet" href="{% static 'portafolio/css/habilidades.css' %}">
+		<link rel="stylesheet" href="{% static 'portafolio/css/bienvenida.css' %}">
+		<link rel="stylesheet" href="{% static 'portafolio/css/contactame.css' %}">
+		<link rel="stylesheet" href="{% static 'portafolio/css/lenguajes.css' %}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+		<!-- Barra de navegación -->
+		<!-- Navbar Superior -->
+		<nav id="navbar" class="neon-navbar">
+			<div class="nav-container">
+				<ul class="nav-menu">
+					<li>
+						<a href="#inicio" class="nav-link" data-tooltip="Inicio">
+							<i class="fas fa-home"></i>
+							<span class="nav-text">Inicio</span>
+						</a>
+					</li>
+					<li>
+						<a href="#habilidades" class="nav-link" data-tooltip="Habilidades">
+							<i class="fa-solid fa-mug-hot"></i>
+							<span class="nav-text">Habilidades</span>
+						</a>
+					</li>
+					<li>
+						<a href="#proyectos" class="nav-link" data-tooltip="Proyectos">
+							<i class="fas fa-briefcase"></i>
+							<span class="nav-text">Proyectos</span>
+						</a>
+					</li>
+					<li>
+						<a href="#lenguajes" class="nav-link" data-tooltip="Lenguajes">
+							<i class="fas fa-code"></i>
+							<span class="nav-text">Lenguajes</span>
+						</a>
+					</li>
+					<li>
+						<a href="#contactame" class="nav-link" data-tooltip="Contacto">
+							<i class="fas fa-phone"></i>
+							<span class="nav-text">Contacto</span>
+						</a>
+					</li>
+					<li>
+						<a href="/mi_cv/portafolio/templates/open.html" class="nav-link" data-tooltip="Open">
+							<i class="fa-solid fa-crown"></i>
+							<span class="nav-text">Open</span>
+						</a>
+					</li>
+					<li>
+						<a href="/mi_cv/portafolio/templates/FYQ.html" class="nav-link" data-tooltip="FYQ">
+							<i class="fa-solid fa-question"></i>
+							<span class="nav-text">FYQ</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Intro -->
+					<section class="hero-section" id="inicio">
+						<div class="hero-content">
+							<div class="hero-text">
+								<div class="tagline">Hi, I am</div>
+								<h1>ANDRES MORENO</h1>
+								<div class="typewriter-wrapper">
+									<span class="typewriter-text">Backend Software Engineer</span>
+								</div>
+								<p class="hero-description">Results-oriented backend developer focused on creating robust, secure, and maintainable systems.</>
+								<div class="small row"></div>
+								
+								<div class="hero-buttons">
+									<a href="{% static 'portafolio/docs/Hoja de Vida - ATS.docx' %}" class="btn-primary">
+										<i class="fas fa-user-tie"></i>KNOW MY JOURNEY
+									</a>
+									<a href="#habilidades" class="btn-secondary">
+										<i class="fas fa-code"></i>KEEP READING
+									</a>
+								</div>
+							</div>
+							
+							<div class="hero-image">
+								<div class="yo-img">
+									<img src="{% static 'portafolio/images/Yo.jpg' %}" alt="Andres Moreno">
+								</div>
+							</div>
+						</div>
+						
+						<div class="scroll-indicator">
+							<span>Scroll Down</span>
+							<div class="arrow"></div>
+						</div>
+					</section>
+				<!-- habilidades -->
+					<section id="habilidades" class="neon-skills-section">
+						<h1 class="neon-skills-title">SKILLS</h1>
+						<div class="neon-cards-container">
+							<!-- Tarjeta 1 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/critico.png' %}" alt="Pensamiento crítico" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Pensamiento crítico</h3>
+									<p class="neon-skill-desc">Analizo situaciones para tomar decisiones lógicas y acertadas</p>
+								</div>
+							</div>
+							<!-- Tarjeta 2 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/comunicacionefectiva.png' %}" alt="Comunicación efectiva" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Comunicación efectiva</h3>
+									<p class="neon-skill-desc">Expreso ideas de forma clara y escucha activamente a los demás.</p>
+								</div>
+							</div>
+							<!-- Tarjeta 3 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/problema.png' %}" alt="Resolución de problemas" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Resolución de problemas</h3>
+									<p class="neon-skill-desc">Encuentro soluciones eficientes a desafíos complejos</p>
+								</div>
+							</div>
+							<!-- Tarjeta 4 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/adaptar.png' %}" alt="Adaptabilidad" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Adaptabilidad</h3>
+									<p class="neon-skill-desc">Me ajusto a nuevos entornos, tecnologías y cambios en los proyectos</p>
+								</div>
+							</div>
+							<!-- Tarjeta 5 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/equipo.png' %}" alt="Trabajo en equipo" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Trabajo en equipo</h3>
+									<p class="neon-skill-desc">Colaboro con otros para lograr un objetivo común.</p>
+								</div>
+							</div>
+							<!-- Tarjeta 6 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/iniciativa.png' %}" alt="Iniciativa" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Iniciativa</h3>
+									<p class="neon-skill-desc">Tomar la delantera y proponer soluciones sin esperar que te lo pidan.</p>
+								</div>
+							</div>
+							<!-- Tarjeta 1 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/organizado.png' %}" alt="Organización" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Organización</h3>
+									<p class="neon-skill-desc">Gestionar tareas y tiempo de manera eficiente para cumplir plazos.</p>
+								</div>
+							</div>
+							<!-- Tarjeta 1 -->
+							<div class="neon-skill-card">
+								<div class="neon-card-glare"></div>
+								<div class="neon-image-container">
+									<img src="{% static 'portafolio/images/habilidades/aprendizaje-continuo.png' %}" alt="Aprendizaje continuo" class="neon-skill-image">
+								</div>
+								<div class="neon-skill-content">
+									<h3 class="neon-skill-name">Aprendizaje continuo</h3>
+									<p class="neon-skill-desc">Mantenerse actualizado y adquirir nuevas habilidades constantemente.</p>
+								</div>
+							</div>
+							
+							
+							<!-- Repite para las demás tarjetas cambiando el contenido -->
+						</div>
+						
+						<!-- Efecto de partículas rojo vino -->
+						<div class="neon-particles" id="wine-particles"></div>
+					</section>
+				<!-- proyectos -->
+					<section id="proyectos" class="neon-projects">
+						<div class="inner">
+							<h2 class="neon-title">Mis <span class="neon-highlight">Proyectos</span></h2>
+							<div class="projects-grid">
+								<!-- Proyecto 1 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Api de pokemones</h3>
+									<img src="{% static 'portafolio/images/Logo.png' %}" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Plataforma web que permite a los usuarios buscar, observar y guardar sus pokemones favoritos.</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#Javascript</span>
+										<span class="neon-tag">#CSS3</span>
+										<span class="neon-tag">#HTML5</span>
+									</div>
+									<a href="https://github.com/" class="neon-button">
+										Ver Proyecto
+									</a>
+									<a href="https://github.com/" class="neon-button">
+										Ver Repositorio en github
+									</a>
+								</div>
+								<!-- Proyecto 2 -->
+								<!-- Proyecto 3 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Api de Astronomia</h3>
+									<img src="{% static 'portafolio/images/Proyectos/Muestra-Api Nasa.png' %}" alt="proyecto3" class="imagenes-proyecto">
+									<p class="neon-card-desc">Pagina web que te permite ver las constelaciones registradas por la nasa hasta el dia de hoy</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#NextJS</span>
+										<span class="neon-tag">#Supabase</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="https://generation-nasa-c2utkonv6-more-fs-projects.vercel.app/" class="neon-button">
+										Ver Proyecto
+									</a>
+									<a href="https://github.com/More-F/generation-nasa-api" class="neon-button">
+										Ver Repositorio en github
+									</a>
+								</div>
+								<!-- Proyecto 4 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Pagina de comercio vintage</h3>
+									<img src="{% static 'portafolio/images/Logo.png' %}" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Pagina web que da la informacion de venta y registro de productos vintage</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#NextJS</span>
+										<span class="neon-tag">#Supabase</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="#" class="neon-button">
+										Ver Proyecto
+									</a>
+									<a href="https://github.com/More-F/Pagina-Vintage" class="neon-button">
+										Ver Repositorio en github
+									</a>
+								</div>
+								<!-- Proyecto 5 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">Proyecto E-commerce</h3>
+									<img src="{% static 'portafolio/images/Proyectos/Muestra-NucleoTech.png' %}" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">Plataforma web de venta sobre productos tecnologicos</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#Anime.JS</span>
+										<span class="neon-tag">#HTML5</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="https://master.d26qk8omxad1ry.amplifyapp.com/" class="neon-button">
+										Ver Proyecto
+									</a>
+									<a href="https://github.com/More-F/Nucleo-Tech---Fronted" class="neon-button">
+										Ver Repositorio en github
+									</a>
+								</div>
+								<!-- Proyecto 6 -->
+								<div class="neon-card">
+									<div class="card-glare"></div>
+									<h3 class="neon-card-title">ERP para negocio de comida</h3>
+									<img src="{% static 'portafolio/images/Logo.png' %}" alt="proyecto1" class="imagenes-proyecto">
+									<p class="neon-card-desc">ERP desarrollada en Java que registra ventas, clientes, vendedores, stock, distribuidores y guarda facturas personalizadas segun la compra</p>
+									<div class="tech-tags">
+										<span class="neon-tag">#NextJS</span>
+										<span class="neon-tag">#Supabase</span>
+										<span class="neon-tag">#CSS</span>
+									</div>
+									<a href="#" class="neon-button">
+										Ver Proyecto
+									</a>
+									<a href="https://github.com/" class="neon-button">
+										Ver Repositorio en github
+									</a>
+								</div>
+								
+							</div>
+						</div>
+						<!-- Efecto de partículas neon -->
+						<div class="neon-particles" id="neon-particles"></div>
+					</section>
+				<!--lenguajes -->
+					<section id="lenguajes" class="tech-section">
+						<div class="inner">
+							<h2 class="tech-title">LENGUAJES & TECNOLOGÍAS</h2>
+							<div class="tech-grid">
+								<!-- Tecnología 1 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/html5.png' %}" alt="HTML5" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 2 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/css3.png' %}" alt="CSS3" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 3 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/javascript.png' %}" alt="JavaScript" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 4 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/nodejs.png' %}" alt="Node.js" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 5 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/java.png' %}" alt="Java" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 6 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/docker.png' %}" alt="Docker" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 7 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/mongodb.png' %}" alt="MongoDB" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 8 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/mysql.png' %}" alt="MySQL" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 9 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/git.png' %}" alt="Git" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+								
+								<!-- Tecnología 10 -->
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/figma.png' %}" alt="FIGMA" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+
+								<div class="tech-circle">
+									<img src="{% static 'portafolio/images/lenguajes/python.png' %}" alt="python" class="tech-icon">
+									<div class="tech-glow"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				<!-- Contactame -->
+					<section id="contactame" class="neon-contact-section">
+						<div class="neon-overlay"></div>
+						<div class="inner">
+							<h2 class="neon-contact-title">Contáctame</h2>
+							<p class="neon-contact-subtitle">¿Tienes un proyecto en mente o quieres colaborar? Envíame un mensaje y hablemos sobre cómo puedo ayudarte.</p>
+							
+							<div class="neon-contact-grid">
+								<!-- Formulario Futurista Neon -->
+								<div class="neon-contact-form">
+									<form id="contactForm" method="post" action="{% url 'contacto' %}">
+										{% csrf_token %}
+
+										<div class="neon-form-group">
+											<div class="neon-input-group">
+												<input type="text" name="nombre" id="nombre" required />
+												<label for="nombre">Nombre</label>
+												<div class="neon-underline"></div>
+											</div>
+											
+											<div class="neon-input-group">
+												<input type="email" name="email" id="email" required />
+												<label for="email">Email</label>
+												<div class="neon-underline"></div>
+											</div>
+										</div>
+										
+										<div class="neon-input-group neon-textarea-group">
+											<textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+											<label for="mensaje">Mensaje</label>
+											<div class="neon-underline"></div>
+										</div>
+										
+										<button type="submit" class="neon-submit-btn">
+											<span>Enviar Mensaje</span>
+											<div class="neon-arrow-wrapper">
+												<div class="neon-arrow"></div>
+											</div>
+										</button>
+									</form>
+									<!-- Aquí aparecerán los mensajes -->
+									<div id="formMessage"></div>
+								</div>
+								
+								<!-- Info de Contacto Futurista -->
+								<div class="neon-contact-info">
+									<div class="neon-info-card">
+										<div class="neon-card-icon">
+											<i class="fas fa-map-marker-alt"></i>
+										</div>
+										<div class="neon-card-content">
+											<h3>Ubicación</h3>
+											<p>Bogotá, Colombia</p>
+										</div>
+									</div>
+									
+									<div class="neon-info-card">
+										<div class="neon-card-icon">
+											<i class="fas fa-envelope"></i>
+										</div>
+										<div class="neon-card-content">
+											<h3>Email</h3>
+											<a href="mailto:andresfel38.2@gmail.com" class="neon-email">andresfel38.2@gmail.com</a>
+										</div>
+									</div>
+									
+									<div class="neon-info-card">
+										<div class="neon-card-icon">
+											<i class="fas fa-phone-alt"></i>
+										</div>
+										<div class="neon-card-content">
+											<h3>Teléfono</h3>
+											<p class="neon-phone">+57 316 058 8841</p>
+										</div>
+									</div>
+									
+									<div class="neon-social-links">
+										<h3>Redes Sociales</h3>
+										<div class="neon-social-icons">
+											<a href="https://github.com/More-F" class="neon-social-icon" target="_blank">
+												<i class="fab fa-github"></i>
+											</a>
+											<a href="https://www.instagram.com/ares_moren/" class="neon-social-icon" target="_blank">
+												<i class="fab fa-instagram"></i>
+											</a>
+											<a href="https://www.linkedin.com/in/andres-moreno-30371b248/" class="neon-social-icon" target="_blank">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Efecto de partículas neon verde -->
+						<div class="neon-particles" id="contact-particles"></div>
+					</section>
+			</div>
+		<!-- Footer -->
+		<footer id="footer" class="neon-footer">
+			<div class="footer-overlay"></div>
+			<div class="inner">
+				<ul class="footer-menu">
+					<li class="footer-item">&copy; <span class="neon-text">More-F</span>. All rights reserved.</li>
+					<li class="footer-item">Design: <a href="https://github.com/More-F" class="neon-link">Andres Moreno</a></li>
+				</ul>
+				<div class="footer-particles" id="footer-particles"></div>
+			</div>
+		</footer>
+
+		<script src="{% static 'portafolio/js/contact.js' %}"></script>
+		<script src="{% static 'portafolio/js/habilidadesjs' %}"></script>
+		<script type="module" src="{% static 'portafolio/js/bienvenida.js' %}"></script>
+		<script src="{% static 'portafolio/js/contactame.js' %}"></script>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		
+	</body>
+</html>

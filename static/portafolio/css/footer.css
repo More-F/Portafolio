@@ -1,0 +1,123 @@
+/* Estilos para el footer futurista */
+.neon-footer {
+    position: relative;
+    background: #0d0208;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    border-top: 1px solid rgba(150, 0, 50, 0.3);
+    box-shadow: 0 -5px 30px rgba(150, 0, 50, 0.1);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(150, 0, 50, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(100, 0, 30, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-item {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.neon-text {
+    color: #960032;
+    text-shadow: 0 0 5px rgba(150, 0, 50, 0.7);
+    animation: neonPulse 2s infinite alternate;
+}
+
+.neon-link {
+    color: #b366ff;
+    text-decoration: none;
+    position: relative;
+    padding: 0 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.neon-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #b366ff;
+    box-shadow: 0 0 5px #b366ff;
+    transition: width 0.3s ease;
+}
+
+.neon-link:hover {
+    color: #ff4d88;
+    text-shadow: 0 0 10px rgba(255, 77, 136, 0.7);
+}
+
+.neon-link:hover::before {
+    width: 100%;
+}
+
+/* Efecto de partículas */
+.footer-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Animaciones */
+@keyframes neonPulse {
+    from {
+        text-shadow: 
+            0 0 5px rgba(150, 0, 50, 0.7),
+            0 0 10px rgba(150, 0, 50, 0.5);
+    }
+    to {
+        text-shadow: 
+            0 0 10px rgba(150, 0, 50, 0.9),
+            0 0 20px rgba(150, 0, 50, 0.7),
+            0 0 30px rgba(150, 0, 50, 0.5);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .neon-footer {
+        padding: 2rem 1rem;
+    }
+    
+    .footer-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .footer-item {
+        font-size: 0.9rem;
+    }
+}
